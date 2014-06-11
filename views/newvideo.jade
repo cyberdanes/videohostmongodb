@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddVideo(name="addvideo",method="post",action="/addvideo")
+        input#inputVideoTitle(type="text", placeholder="Video Title", name="videotitle")
+        input#inputVideoDesc(type="text", placeholder="Description", name="videodescription")
+        input#inputVideoPath(type="text", placeholder="Video Path", name="videopath")
+        input#inputVideoPoster(type="text", placeholder="Poster Path", name="videoposter")
+        input#inputVideoCategory(type="text", placeholder="Category", name="videocategory")
+        input#inputVideoTags(type="text", placeholder="Video Tags", name="videotags")
+        button#btnSubmit(type="submit") submit
